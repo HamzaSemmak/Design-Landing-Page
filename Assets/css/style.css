@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --warning-color: #ffc107;
+    --white-color: #fff;
+    --Drak-color: #212529;
+    --Section-color: #eff7fa;
+}
+
+body {
+    font-family: 'Poppins' , sans-serif;
+    color: var(--Dark-color);
+}
+
+.main-btn {
+    background-color: var(--warning-color);
+    color: var(--white-color);
+    padding: 0.5rem 1rem;
+}
+
+.main-btn:hover {
+    color: var(--white-color);
+    opacity: 0.9;
+}
+
+.main-title::after {
+    content: '';
+    width: 120px;
+    height: 2px;
+    background-color: var(--warning-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* Navbare */
+.navbar .navbar-nav .nav-link {
+    color: var(--white-color);
+    font-weight: 200;
+} 
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--warning-color);
+    font-weight: 600;
+}
+
+.navbar .search {
+    border-left: 1px solid var(--warning-color);
+}
+
+.navbar .navbar-toggler {
+    color: white;
+    font-size: 25px;
+    border-color: white;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: var(--warning-color);
+}
+
+/* Landing Page */
+.landing {
+    background-color: var(--Drak-color);
+    min-height: calc(100vh - 72px);
+}
+
+/* Features Section */
+.features .icon-holder{
+    height: 200px;
+}
+
+.features .icon-holder svg{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features .icon-holder .number {
+    font-size: 12rem;
+    color: var(--Section-color);
+}
+
+.features .icon-holder .icon {
+    color: var(--warning-color);
+}
+
+/* our-work */
+.our-work {
+    background-color: var(--Section-color);
+}
+
+.our-work .box {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.our-work .box::before {
+    content: attr(data-work);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+}
+
+/* stuff */
+.stuff .description {
+    max-width: 500px;
+}
+
+/* team */
+.team {
+    background-color: var(--Section-color);
+}
+
+.team h2 {
+    color: var(--warning-color);
+}
+
+.team .box h4 {
+    background-color: var(--Drak-color);
+}
+
+/* Subscribe */
+.Subscribe {
+    background-color: var(--Section-color);
+}
+
+.input {
+    border: none;
+    border-bottom: 1px solid var(--warning-color);
+}
+
+.input:focus {
+    outline: none;
+}
+
+.Subscribe input::placeholder {
+    color: var(--Drak-color);
+    text-align: center;
+}
+
+.submit  {
+    background-color: var(--warning-color);
+    color: var(--white-color);
+}
+
+/* Start Footer */
+.footer {
+    background-color: var(--Drak-color);
+}
+.footer .copyright > span {
+    color: var(--White-color);
+}
+.footer .copyright div span {
+    color: var(--warning-color);
+}
+.footer .contact ul svg {
+    width: 20px;
+    height: 20px;
+}
+.footer .facebook {
+    background-color: #1877f2;
+}
+.footer .twitter {
+    background-color: #1da1f2;
+}
+.footer .linkedin {
+    background-color: #0077b5;
+}
+.footer .youtube {
+    background-color: #ff0000;
+}
